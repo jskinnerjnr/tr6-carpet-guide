@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TR6 Carpet Fitment Guide | John Skinner (Manufacturing) Ltd</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background: #f4f4f4; }
+        header { background: linear-gradient(135deg, #1e3c72, #2a5298); color: white; padding: 2rem 0; text-align: center; }
+        header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        header p { font-size: 1.2rem; opacity: 0.9; }
+        .search-box { background: white; padding: 1rem 2rem; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        #search { width: 100%; padding: 0.8rem; font-size: 1rem; border: 2px solid #ddd; border-radius: 25px; outline: none; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        nav { background: white; padding: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 2rem; }
+        nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 1rem; }
+        nav a { color: #1e3c72; text-decoration: none; font-weight: 500; padding: 0.5rem 1rem; border-radius: 20px; transition: all 0.3s; }
+        nav a:hover { background: #1e3c72; color: white; }
+        .section { background: white; margin-bottom: 2rem; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); display: none; }
+        .section.active { display: block; animation: fadeIn 0.5s; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        h2 { color: #1e3c72; border-bottom: 3px solid #2a5298; padding-bottom: 0.5rem; margin-bottom: 1rem; }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { border: 1px solid #ddd; padding: 0.8rem; text-align: left; }
+        th { background: #f8f9fa; }
+        ul, ol { margin-left: 2rem; }
+        .warning { background: #fff3cd; border-left: 5px solid #ffc107; padding: 1rem; margin: 1rem 0; }
+        .tip { background: #d1ecf1; border-left: 5px solid #17a2b8; padding: 1rem; margin: 1rem 0; }
+        img { max-width: 100%; height: auto; border-radius: 8px; }
+        footer { background: #333; color: white; text-align: center; padding: 1rem; margin-top: 3rem; }
+        @media (max-width: 768px) { nav ul { flex-direction: column; } header h1 { font-size: 2rem; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TR6 Carpet Fitment Guide</h1>
+        <p>Carpets & Flooring Only | John Skinner (Manufacturing) Ltd | March 2026</p>
+    </header>
+    
+    <div class="search-box">
+        <input type="text" id="search" placeholder="Search guide (e.g., 'glue', 'sills', 'clips')...">
+    </div>
+    
+    <nav id="toc">
+        <ul>
+            <li><a href="#layout" onclick="showSection('layout')">1. Layout Diagram</a></li>
+            <li><a href="#tools" onclick="showSection('tools')">2. Tools & Materials</a></li>
+            <li><a href="#prep" onclick="showSection('prep')">3. Preparation</a></li>
+            <li><a href="#dummy" onclick="showSection('dummy')">4. Dummy Fit</a></li>
+            <li><a href="#underlay" onclick="showSection('underlay')">5. Underlay/Felt</a></li>
+            <li><a href="#fitting" onclick="showSection('fitting')">6. Carpet Fitting</a></li>
+            <li><a href="#finish" onclick="showSection('finish')">7. Finishing & Testing</a></li>
+            <li><a href="#issues" onclick="showSection('issues')">8. Common Issues</a></li>
+            <li><a href="#resources" onclick="showSection('resources')">9. Resources</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div id="layout" class="section active">
+            <h2>1. Carpet Kit Layout (CCS0361 Example)</h2>
+            <p>Install in numbered order (sills first, front mats last). Dashed #10 overlays.</p>
+            <img src="./images/layout-diagram.webp" alt="CCS0361 Carpet Layout - Numbered Pieces" />
+            <table>
+                <tr><th>#</th><th>Name</th><th>Qty</th><th>Notes</th></tr>
+                <tr><td>1</td><td>Sills</td><td>2</td><td>Door edges; permanent glue</td></tr>
+                <tr><td>2</td><td>Front Bulkhead</td><td>1</td><td>Steering cutout</td></tr>
+                <tr><td>3</td><td>Front Inner Wings</td><td>2</td><td>Fender wells</td></tr>
+                <tr><td>4</td><td>Diff Cover</td><td>1</td><td>Rear hump</td></tr>
+                <tr><td>5</td><td>Front Tunnel</td><td>1</td><td>Fastener marks</td></tr>
+                <tr><td>6</td><td>Mid Tunnel</td><td>1</td><td>Gear slot</td></tr>
+                <tr><td>7</td><td>Parcel Shelf</td><td>1</td><td>Rear deck</td></tr>
+                <tr><td>8</td><td>Rear Tunnel</td><td>1</td><td>Handbrake slot</td></tr>
+                <tr><td>9</td><td>Rear Floor Mats</td><td>2</td><td>Rear footwells</td></tr>
+                <tr><td>10</td><td>Front Floor Mats</td><td>2</td><td>Overlay last</td></tr>
+            </table>
+        </div>
+        
+        <div id="tools" class="section">
+            <h2>2. Tools & Materials</h2>
+            <ul>
+                <li>Contact cement (Evostik, Weldwood) for sills; spray (3M 90, Tetrosyl) for light hold.</li>
+                <li>Knife/shears; roller/block; tape measure; heat gun.</li>
+                <li>Clips (spiky prong + silver washer); pop-rivet studs.</li>
+                <li>Cleaner (alcohol); masking tape.</li>
+                <img src="./images/tools-carpet.jpg" alt="Carpet Tools" />
+            </ul>
+        </div>
+        
+        <!-- Similar for other sections -->
+        
+        <div id="resources" class="section">
+            <h2>9. Resources</h2>
+            <ul>
+                <li>Diagram: CCS0361 Kit.</li>
+                <li>Moss Carpet Guide.</li>
+                <li>Bridge TR5 Carpet Photos.</li>
+                <li>TR Forums/Triumph Experience.</li>
+                <li>John Skinner Article.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 John Skinner (Manufacturing) Ltd | jonny.skinner@john-skinner.co.uk</p>
+    </footer>
+    
+    <script>
+        function showSection(id) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+        }
+        
+        // Simple search
+        document.getElementById('search').addEventListener('input', function(e) {
+            const term = e.target.value.toLowerCase();
+            document.querySelectorAll('.section').forEach(s => {
+                const text = s.textContent.toLowerCase();
+                s.style.display = text.includes(term) ? 'block' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>
